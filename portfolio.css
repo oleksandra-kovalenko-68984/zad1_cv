@@ -128,7 +128,9 @@ body {
 .hero-section {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -307,6 +309,40 @@ body {
   50% {
     transform: translateX(-50%) translateY(10px);
   }
+}
+
+.hero-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  border: 3px solid rgba(168, 85, 247, 0.6);
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.4);
+}
+
+.social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  color: #c4b5fd;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: rgba(168, 85, 247, 0.15);
+  color: #ec4899;
+  transform: translateY(-2px);
 }
 
 /* Section Styles */
